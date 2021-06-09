@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesta paskaita</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .p {
+            font-size: 32px; 
+        }
+        .flex-item-1 {
+            width: 100%;
+            background-color: gray;
+        }
+        .flex-item-2 {
+            width: 50%;
+        }
+        .flex-item-3 {
+            width: 50%;
+        }
+        .flex-item-4 {
+            width: 70%
+        }
+
+        .flex-item-5 {
+            width: 30%;
+        }
+        .flex-item-6, .flex-item-7, .flex-item-8 {
+            width: 33.33%;
+        }
+        .zydra {
+            background-color: blue;
+        }
+        .geltona {
+            background-color: burlywood;
+        }
+        .rozine {
+            background-color: pink;
+        }
+        @media screen and (max-width: 720px) {
+            .flex-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            [class*="flex-item"] {
+                width: 100%;
+                order: 1;
+                justify-content: center;
+                align-items: center;
+
+            }
+        .flex-item-1 {
+            order: 1001;
+        }
+        .flex-item-2 {
+            order: 2;
+        }
+        .flex-item-3 {
+            order: 3;
+        }
+        .flex-item-4 {
+            order: 5;
+        }
+        .flex-item-5 {
+            order: 4;
+        }
+        .flex-item-6 {
+            order: 6;
+        }
+        .flex-item-7 {
+            order: 8;
+        }
+        .flex-item-8 {
+            order: 7;
+        }
+        
+        }
+        .kvadratelis {
+            width: 50px;
+            height: 50px;
+            background-color: royalblue;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex pavyzdys</h1>
+            <div class="flex-container">
+                <div class="flex-item-1">
+                <p>1</p>
+                <div class="kvadratelis">
+                </div>     
+                <div class="kvadratelis">   
+                </div>
+            </div>
+            <div class="flex-item-2 zydra">
+                <p>2</p>
+            </div>
+            <div class="flex-item-3 geltona"><p>3</p></div>
+            <div class="flex-item-4 rozine"><p>4</p></div>
+            <div class="flex-item-5 geltona"><p>5</p></div>
+            <div class="flex-item-6 zydra"><p>6</p></div>
+            <div class="flex-item-7 geltona"><p>7</p></div>
+            <div class="flex-item-8 rozine"><p>8</p></div>
+            <!----<div class="flex-item-9"><p>9</p></div>--->
+            
+            <h1 class="Tekstas">Flex tekstas</h1>
+            
+        </div>
+    </div>
+</body>
+</html>
